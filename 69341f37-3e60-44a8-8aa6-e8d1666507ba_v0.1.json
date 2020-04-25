@@ -1,0 +1,622 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Nagarro leave and holiday management",
+  "desc": "This app helps user to apply for optional leaves and holidays. Also, it helps user see their applied leaves and official holidays as per company policy.",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "LeaveRequest"
+    },
+    {
+      "name": "ListOfAppliedFlexibleHolidaysOrLeaves"
+    },
+    {
+      "name": "ListUpcomingFlexibleHolidays"
+    },
+    {
+      "name": "ListUpcomingPublicHolidays"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "UserSelectedFlexibleHoliday"
+    }
+  ],
+  "entities": [
+    {
+      "name": "FlexibleHolidayOrLeave",
+      "roles": []
+    },
+    {
+      "name": "HeroCardId",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "apply for a leave on 22nd march",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "apply for flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "apply for leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "apply for optional holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "apply leave from 15th march to 20th march",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "apply leaves",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "apply leaves for march",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "apply leaves from march",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 2/12/2019 12:00:00 am 1001",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 2/12/2019 12:00:00 am 1002",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 2/15/2019 12:00:00 am 1005",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 3/12/2019 12:00:00 am 1007",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 4/12/2019 12:00:00 am 1010",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "applying_for_optional_holiday_from_hero_card 9/28/2019 12:00:00 am 1003",
+      "intent": "UserSelectedFlexibleHoliday",
+      "entities": [
+        {
+          "entity": "HeroCardId",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "details of leave i have applied for",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "flexi holiday applied",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "flexible holiday application",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "flexible holidays from june",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "flexible holidays from march to july",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "flexible holidays in march",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "guten morgen",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "holidays till march",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i need leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "i need leave from 10th to 14th",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "i need leave next week",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "i want to opt for flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "i want to opt for leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "i want to see my upcoming submitted requests",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": []
+    },
+    {
+      "text": "i want to take a leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "i want to take flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "i will be on leave on 2nd week of may",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "kem cho",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "leave application",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "leave request",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "list my applied leaves from march to june",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "list of applied optional holiday",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "list of flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "majama",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "namaste",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "opt for leaves",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "optional holidays from april to june",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "optional holidays till june",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "public holiday for april",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "ram ram",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "show applied leaves",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "show flexi holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show flexible holidays applied by me for the month of june",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 5,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "show holidays from march to april",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "show me applied leaves",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "show me flexible holiday list",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show me list of applied flexi leaves",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 24,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "show me list of applied flexible holidays",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "show me my upcoming flexible holidays",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "show my applied leaves",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "show my leave on friday",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": []
+    },
+    {
+      "text": "show my opted flexi holidays for the month of march",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 14,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "show my opted flexible holidays for the month of march",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "show my submitted requests",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": []
+    },
+    {
+      "text": "show my upcoming submitted requests",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": []
+    },
+    {
+      "text": "show submitted leaves",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 15,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "show upcoming flexi holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming flexi holidays for april",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming flexible holidays",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming flexible holidays for april",
+      "intent": "ListUpcomingFlexibleHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming holidays from tomorrow",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming holidays in march",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "show upcoming holidays on 19th",
+      "intent": "ListUpcomingPublicHolidays",
+      "entities": []
+    },
+    {
+      "text": "take leave",
+      "intent": "LeaveRequest",
+      "entities": []
+    },
+    {
+      "text": "view submitted request for flexible holidays",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 27,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "view submitted requests for flexi",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 28,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "view submitted requests for flexible holiday",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 28,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "view submitted requests for flexible holidays",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 28,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "view submitted requests for leave",
+      "intent": "ListOfAppliedFlexibleHolidaysOrLeaves",
+      "entities": [
+        {
+          "entity": "FlexibleHolidayOrLeave",
+          "startPos": 28,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "wassup",
+      "intent": "Greeting",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
